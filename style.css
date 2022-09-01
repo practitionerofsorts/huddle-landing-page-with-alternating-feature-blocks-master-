@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+li{
+    list-style: none;
+}
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+
+    --padding--all: 6%;
+
+    --margin-buttom: 12em;
+    --margin-buttom-2: 2em;
+
+    --card-border-radius: 1em;
+
+    --button-radius-1: 1.5em;
+    --button-radius-2: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--Very-Dark-Cyan);
+    font-family: 'Poppins', sans-serif;
+    font-size: initial;
+}
+button{
+    cursor: pointer;
+    font-weight: 700;
+}
+.general-pink-button{
+    background-color: var(--Pink);
+    color: white;
+    width: 100%;
+    height: 3.5em;
+    border-radius: var(--button-radius-2);
+    border: none;
+}
+.general-pink-button:hover{
+    opacity: .8;
+    transition: .5s ease-out;
+}
+body::before{
+    content: "";
+    width: 100%;
+    height: 39em;
+    background: url('images/bg-hero-desktop.svg') no-repeat;
+    background-size: 100% 38.5em;
+    background-color: var(--Very-Pale-Cyan);
+    position: absolute;
+    z-index: -1;
+}
+.whole-container{
+    min-height: 100vh;
+}
+header{
+    padding: 2em var(--padding--all);
+    margin-bottom: 1em;
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    margin-right: auto;
+}
+.header-wrapper__button{
+    box-shadow: 0px 3px 10px -7px #000;
+    border-radius: var(--button-radius-1);
+    background-color: white;
+    border: none;
+    width: 100%;
+    max-width: 12em;
+    height: 3em;
+}
+.header-wrapper__button:hover{
+    opacity: .5;
+    transition: .5s ease-out;
+}
+.hero{
+    padding: 0 var(--padding--all);
+    margin-bottom: var(--margin-buttom);
+}
+.hero-wrapper{
+    display: flex;
+    gap: 4em;
+    align-items: center;
+}
+.hero-wrapper__text h1{
+    font-size: 2.2rem;
+    margin-bottom: .5em;
+}
+.hero-wrapper__text p{
+    margin-bottom: 1.5rem;
+}
+.hero-wrapper__text button{
+    max-width: 16em;
+}
+.hero-wrapper__img-container img{
+    max-width: 38em;
+}
+.benefits-cards-container{
+    margin-bottom: var(--margin-buttom-2);
+}
+.benefits-cards-container-wrapper{
+    padding: 0 var(--padding--all);
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.benefit-card{
+    display: flex;
+    gap: 6.5em;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 15px -12px #000;
+    border-radius: var(--card-border-radius);
+    padding: 3em 6em;
+}
+.benefit-card__img img{
+    width: 25em;
+}
+.benefit-card__text h1{
+    font-size: 1.7rem;
+    margin-bottom: .4em;
+}
+.benefit-card__text p{
+    line-height: 1.3rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.middle-card{
+    display: flex;
+    gap: 1em;
+    padding: 2em 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0px 0px 15px -12px #000;
+    background-color: white;
+    width: 100%;
+    max-width: 42em;
+    transform: translateY(40%);
+    margin: 0 auto;
+}
+.middle-card h1{
+    font-size: 1.9rem;
+}
+.middle-card button{
+    width: 100%;
+    max-width: 24em;
+    height: 5em;
+    border-radius: 10em;
+    box-shadow: 0px 3px 10px -7px #000;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding: 8em var(--padding--all) 2em;
+}
+.footer-wrapper{
+    color: white;
+}
+.footer-logo{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(3513%) hue-rotate(333deg) brightness(120%) contrast(100%);
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+.footer-logo img{
+    width: 9em;
+}
+.flex-columns{
+    display: flex;
+    gap: 7em;
+    margin-bottom: 1em;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.flex-contacts{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1.5em;
+    width: 100%;
+    max-width: 24em;
+}
+.flex-contacts img{
+    height: 18px;
+}
+.location img{
+    margin-top: .2em;
+    align-self: flex-start;
+}
+.info-lists ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.info-lists li{
+    position: relative;
+    cursor: pointer;
+}
+.info-lists li::after{
+content: "";
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: white;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+ .social-icons ul{
+    display: flex;
+    gap: .5em;
+    flex-direction: row;
+}
+.icon-container img{
+    width: 2em;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(3513%) hue-rotate(333deg) brightness(120%) contrast(100%);
+}
+.icon-container img:hover{
+    transition: .35s ease-out;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(92%) saturate(1494%) hue-rotate(294deg) brightness(100%) contrast(102%);
+}
+.info-lists li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    cursor: pointer;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    cursor: pointer;
+}
+.foot{
+    background-color: var(--Very-Dark-Cyan);
+}
+@media (max-width:1100px){
+    *,
+    *::before,
+    *::after{
+        font-size: 16px;
+    }
+    body::before{
+        height: 30em;
+        background-size: 100% 29em;
+    }
+    .header__logo{
+        width: 9em;
+    }
+    .header-wrapper__button{
+        width: 8em;
+        height: 2em;
+    }
+    .hero-wrapper__img-container img{
+        width: 25em;
+    }
+    .hero-wrapper__text h1{
+        font-size: 1.9rem;
+    }
+    .benefit-card__img img{
+        width: 19em;
+    }
+}
+@media (max-width: 900px){
+    body::before{
+        height: 50em;
+        background-size: 100% 50em;
+    }
+    .hero-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-wrapper__img-container img{
+        width: 99%;
+    }
+    .hero-wrapper__text{
+        text-align: center;
+    }
+    .benefits-cards-container-wrapper{
+        gap: 2em;
+    }
+    .benefit-card{
+        text-align: center;
+        gap: 1.5em;
+        flex-direction: column-reverse;
+        width: 99%;
+        max-width: 35em;
+        padding: 2em 0;
+    }
+    .benefit-card__img{
+        width: 150%;
+    }
+    .benefit-card__img img{
+        width: 50%;
+        margin: auto;
+    }
+    .benefit-card__text{
+        padding: 0 2em;
+    }
+    .flex-columns{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .middle-card{
+    width: 90%;
+    gap: 1em;
+    text-align: center;
+    max-width: 35em;
+    padding: 2em 0;
+    }
+    .middle-card button{
+        width: 70%;
+        height: 3em;
+    }
+    .contacts{
+    margin-bottom: 1.5em;
+}
+}
+@media (max-width:500px){
+    body::before{
+        content: "";
+        width: 100%;
+        height: 48em;
+        background: url('images/bg-hero-mobile.svg') no-repeat;
+        background-size: 100% 44em;
+        background-color: var(--Very-Pale-Cyan);
+        position: absolute;
+        z-index: -1;
+    }
+    header{
+        margin-bottom: 3em;
+    }
+    .header-wrapper__button{
+        font-size: 13px;
+    }
+    .header__logo{
+        width: 7em;
+    }
+    .hero-wrapper__text{
+        padding: 0 2em;
+    }
+    .hero-wrapper__text h1{
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+    }
+    .benefit-card{
+        gap: 3.5em;
+    }
+    .benefit-card__text h1{
+        font-size: 1.5rem;
+    }
+    .middle-card h1{
+        font-size: 1rem;
+    }
+    .middle-card button{
+        width: 12em;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .copyright{
+        justify-content: center;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Pink);
+  }
+  .attribution a {
+    font-size: 10px;
+    color: var(--Very-Pale-Cyan);
+    font-family: 'Aboreto', cursive;
+  }
